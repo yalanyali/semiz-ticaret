@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  semiz-crypto-bot:
+    container_name: semiz-crypto-bot
+    build: .
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+    networks:
+      - proxy
+
+networks:
+  proxy:
+    external: true

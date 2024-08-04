@@ -2,7 +2,7 @@ const ccxt = require('ccxt')
 
 const cache = {
   tickers: {
-    updateTimeoutSeconds: process.env.TICKERS_UPDATE_TIMEOUT_SECONDS || 30,
+    updateTimeoutSeconds: process.env.TICKERS_UPDATE_TIMEOUT_SECONDS || 40,
     lastUpdated: 0,
     data: {}
   },

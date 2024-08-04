@@ -7,7 +7,7 @@ const cache = {
     data: {}
   },
   balance: {
-    updateTimeoutSeconds: process.env.BALANCE_UPDATE_TIMEOUT_SECONDS || 10,
+    updateTimeoutSeconds: process.env.BALANCE_UPDATE_TIMEOUT_SECONDS || 20,
     lastUpdated: 0,
     data: {}
   }
